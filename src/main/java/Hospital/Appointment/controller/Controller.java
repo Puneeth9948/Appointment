@@ -22,8 +22,8 @@ public class Controller {
     private Repository repository;
     @Autowired private RestTemplate restTemplate;
 
-    private final String PATIENT_SERVICE_URL = "http://localhost:8080/patient/";
-    private final String DOCTOR_SERVICE_URL = "http://localhost:8081/doctor/";
+    private final String PATIENT_SERVICE_URL = "https://patient-fna0fghecmdyf2h7.eastus2-01.azurewebsites.net/patient/";
+    private final String DOCTOR_SERVICE_URL = "https://doctor-h0buhsb5fee3hjcp.eastus2-01.azurewebsites.net/doctor/";
     @PostMapping ("/add")
     public ResponseEntity<Appointment> create(@RequestBody Appointment req) {
         try {
